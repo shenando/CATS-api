@@ -93,10 +93,6 @@ app.get('/api/cats/:name', (request, response) => {
     }  
 })
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
-
-// app.listen(process.env.PORT || PORT, () => {
-//     console.log(`Server running on port ${PORT}`)
-// })
